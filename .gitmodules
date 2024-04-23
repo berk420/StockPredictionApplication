@@ -1,0 +1,3 @@
+[submodule "stockAnalyst"]
+	path = stockAnalyst
+	url = https://github.com/berk420/stockAnalyst.git
