@@ -46,33 +46,6 @@ namespace StockAPI.Controllers
 
             return new JsonResult(filteredStocks);
         }
-
-        [HttpGet("petrol/cashandcashequal")]
-        [Produces("application/json")]
-        public async Task<IActionResult> GetOilCachandacheequal()
-        {
-            var stocks = await _service.GetStocks();
-
-            var hisseAdiListesi = new List<string> { "TUPRS", "ANOTHER", "YETANOTHER" };
-
-            var filteredStocks = new List<Stock>();
-
-            foreach (var stock in stocks)
-            {
-                if (hisseAdiListesi.Contains(stock.hisse_adi) && stock.bilanco_kalemi == "Nakit ve Nakit Benzerleri")
-                {
-
-                    filteredStocks.Add(stock);
-                }
-            }
-
-            return new JsonResult(filteredStocks);
-        }
-
-
-
-
-
     }
 }
 

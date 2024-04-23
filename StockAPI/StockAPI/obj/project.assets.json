@@ -648,11 +648,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\berk\\source\\repos\\StockAPI\\StockAPI\\StockAPI.csproj",
+      "projectUniqueName": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.csproj",
       "projectName": "StockAPI",
-      "projectPath": "C:\\Users\\berk\\source\\repos\\StockAPI\\StockAPI\\StockAPI.csproj",
+      "projectPath": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.csproj",
       "packagesPath": "C:\\Users\\berk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\berk\\source\\repos\\StockAPI\\StockAPI\\obj\\",
+      "outputPath": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\berk\\AppData\\Roaming\\NuGet\\NuGet.Config",
