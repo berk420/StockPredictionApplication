@@ -1,0 +1,44 @@
+.dx-overlay-content {
+    background-color:grey;
+}
+#view {
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:grey;
+    display: flex;
+    justify-content: center; /* İçeriği yatayda merkezlemek için */
+    height: 100%; /* Ebeveynin yüksekliğini kaplamak için */
+
+}
+/* ... */
+#toolbar {
+    background-color: rgba(191, 191, 191, .15);
+    padding: 5px 10px;
+}
+.dx-toolbar-button .dx-button {
+    background-color: rgba(191, 191, 191, -0.15);
+    border: none;
+}
+.dx-toolbar-button > .dx-toolbar-item-content {
+    margin-left: -7px;
+}
+.dx-list-item-icon {
+    margin-right: 10px;
+}
+/* canvasContainer div'inin stilini ayarla */
+/* #canvasContainer div'inin stilini ayarla */
+#canvasContainer {
+    display: flex; /* Flexbox düzenini kullan */
+    flex-direction: column; /* Elemanları dikey olarak sırala (alt alta) */
+    align-items: center; /* Elemanları yatayda ortala */
+    justify-content: center; /* Elemanları dikeyde ortala */
+    width: 30%; /* div'in genişliği sayfanın genişliği kadar olacak */
+    margin: 0; /* Varsayılan marjinleri kaldır */
+    padding: 0; /* Varsayılan padding'i kaldır */
+}
+
