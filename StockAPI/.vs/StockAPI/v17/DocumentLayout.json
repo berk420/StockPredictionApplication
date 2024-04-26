@@ -54,27 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 236,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{33c88fe3-43b3-374e-9aac-c4679036dce0}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StockAPI.http",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.http",
-              "RelativeDocumentMoniker": "StockAPI\\StockAPI.http",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.http",
-              "RelativeToolTip": "StockAPI\\StockAPI.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-04-23T07:50:44.544Z"
             },
             {
               "$type": "Document",
@@ -122,8 +106,7 @@
               "RelativeToolTip": "StockAPI\\Program.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAkwCQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:26:00.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T07:26:00.13Z"
             },
             {
               "$type": "Document",
@@ -149,6 +132,22 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:29:29.884Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StockAPI.http",
+              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.http",
+              "RelativeDocumentMoniker": "StockAPI\\StockAPI.http",
+              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.http",
+              "RelativeToolTip": "StockAPI\\StockAPI.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-04-23T07:50:44.544Z"
             },
             {
               "$type": "Document",

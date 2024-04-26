@@ -6,13 +6,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 async function fetch_all_data_db(stockName,finantionalStatement) {
     try {
         const response = await fetch('https://localhost:7098/api/StockAPI/alldata');
-        
         let data = await response.json();
-
-        const filteredData = await data.filter(row => row.hisse_adi ===stockName && row.bilanco_kalemi === finantionalStatement);
-
-        //const jsonResult = await JSON.stringify(filteredData);
-        
+        const filteredData = await data.filter(row => row.hisse_adi ===stockName && row.bilanco_kalemi === finantionalStatement);        
         return filteredData;
         
     } catch (error) {
@@ -20,16 +15,14 @@ async function fetch_all_data_db(stockName,finantionalStatement) {
     }
 }
 
-
-
 function stockname_petrol(){
 
-    return ["TUPRS"]
+    return ["TUPRS","CRDFA"]
 }
 
 function finantial_statement(){
-    /*
-    return ["CashandCashEquivalents",
+    
+    return ["CashEquivalents",
             "CurrentAssetFinancialInvestments",
             "TradeReceivables",
             "OtherReceivables",
@@ -38,9 +31,7 @@ function finantial_statement(){
             "CurrentAssetsPrepaidExpenses",
             "OtherCurrentAssets",
             "TotalCurrentAssets"]
-            */
-
-            return ["CashEquivalents"]
+            
 }
 
 async function CollectTimeData(data,hisse,stockName) {
@@ -94,52 +85,103 @@ function createChartData(xList,yList) {
 }
 
 
-async function drawChart(stockStatementName,chartData,stockStatementName) {
+function cretegeneralhtml(hisse){
 
-    var divElement = document.getElementById("canvasContainer");
-    var canvasElement = document.createElement("canvas");
 
-    canvasElement.width = 800; 
-    canvasElement.height = 400; 
-    canvasElement.id = stockStatementName; 
+
+    setTimeout(function() {
+        var allContainer = document.getElementById("allelement");
+
+        console.log("almaya çalıştı ")
     
-    divElement.appendChild(canvasElement);
+        console.log(allContainer);
+    
+    
+        var hissediv = document.createElement("div");
+        hissediv.id = hisse;
+    
+        hissediv.style.display = "stretch";
+        hissediv.style.flexDirection = "row";
+        hissediv.style.alignItems = "start";
+        hissediv.style.justifyContent = "start";
+        hissediv.style.width = "300px";
+        hissediv.style.height = "100%";
+    
+        hissediv.style.margin = "10";
+        hissediv.style.padding = "10";
+        hissediv.style.backgroundColor = "gold";
+        hissediv.style.border = "2px solid black";
+    
+        allContainer.appendChild(hissediv);
+     
+    }, 1000);
+    
 
-    var ctx =  document.getElementById(stockStatementName);
+}
 
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            datasets: [{
-                label: stockStatementName,
-                data: chartData,
-                borderColor: 'rgb(75, 192, 192)',
-                fill: false
-            }]
-        },
-        options: {
-            scales: {
-                xAxes: [{
-                    type: 'time',
-                    time: {
-                        unit: 'month'
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Zaman'
-                    },
-                    reverse: true // Bu satır x eksenini tersine çevirir
+function createfinstatementelement(hisse,stockStatementName){
+    setTimeout(function() {
 
-                }],
-                yAxes: [{
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Deger'
+        var hisseelement = document.getElementById(hisse);
+        console.log(hisseelement)
+
+        var stocknamediv = document.createElement("canvas");
+
+        stocknamediv.id=stockStatementName+hisse;
+        stocknamediv.style.width = "100%";
+        stocknamediv.style.height = "200px";
+        stocknamediv.style.border = "2px solid black";
+        hisseelement.appendChild(stocknamediv);
+
+    }, 1000);
+
+}
+function drawChart(stockStatementName,chartData,stockStatementNameplshisse,hisse) {
+
+
+
+        setTimeout(function() {
+
+            console.log(stockStatementName+"+"+hisse);
+
+            var ctx =  document.getElementById(stockStatementName+hisse);
+
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: stockStatementName,
+                        data: chartData,
+                        borderColor: 'rgb(75, 192, 192)',
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            time: {
+                                unit: 'month'
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Zaman'
+                            },
+                            reverse: true // Bu satır x eksenini tersine çevirir
+
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Deger'
+                            }
+                        }]
                     }
-                }]
-            }
-        }
-    });
+                }
+            });
+    }, 2000);
+
+
 }
 
 async function createRandomChartData() {
@@ -186,18 +228,20 @@ async function setdrawer() {
                     await $("#view").load("./pages/" + e.addedItems[0].path + ".html");
                     if (e.addedItems[0].path == "petrol") {
 
-                        stockname_petrol().forEach(hisse => {
-            
+                        stockname_petrol().forEach(async hisse => {
+                            console.log("giriyor ")
+
+                            await cretegeneralhtml(hisse);
                             finantial_statement().forEach(async finantial_statement_name=>{
 
-                                let data =await fetch_all_data_db(hisse,finantial_statement_name);
-                                console.log(data);
+                                await createfinstatementelement(hisse,finantial_statement_name);
 
-                                let all =createChartData(await CollectTimeData(data,hisse,finantial_statement_name).then(),await CollectStockValueData(data,hisse,finantial_statement_name).then());
 
-                                console.log(all)
-
-                                drawChart(finantial_statement_name,all,finantial_statement_name+hisse);
+                                 drawChart( finantial_statement_name, createChartData
+                                    (await CollectTimeData(
+                                        await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then(),
+                                        await CollectStockValueData(await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then()),
+                                         finantial_statement_name+hisse,hisse);
 
                             })
                         });

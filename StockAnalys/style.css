@@ -34,11 +34,25 @@
 /* #canvasContainer div'inin stilini ayarla */
 #canvasContainer {
     display: flex; /* Flexbox düzenini kullan */
-    flex-direction: column; /* Elemanları dikey olarak sırala (alt alta) */
+    flex-direction: row; /* Elemanları dikey olarak sırala (alt alta) */
     align-items: center; /* Elemanları yatayda ortala */
-    justify-content: center; /* Elemanları dikeyde ortala */
+    justify-content :first baseline; /* Elemanları dikeyde ortala */
     width: 30%; /* div'in genişliği sayfanın genişliği kadar olacak */
     margin: 0; /* Varsayılan marjinleri kaldır */
     padding: 0; /* Varsayılan padding'i kaldır */
+    background-color:gold
+
+}
+
+#allelement{
+    display: flex; /* Flexbox düzenini kullan */
+    flex-direction: row; /* Elemanları dikey olarak sırala (alt alta) */
+    align-items: start; /* Elemanları yatayda ortala */
+    justify-content: start; /* Elemanları dikeyde ortala */
+    width: 100%; /* div'in genişliği sayfanın genişliği kadar olacak */
+    margin: 0; /* Varsayılan marjinleri kaldır */
+    padding: 0; /* Varsayılan padding'i kaldır */
+    background-color:green
+
 }
 
