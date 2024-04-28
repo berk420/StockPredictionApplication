@@ -17,20 +17,12 @@ async function fetch_all_data_db(stockName,finantionalStatement) {
 
 function stockname_petrol(){
 
-    return ["TUPRS","CRDFA"]
+    return ["TUPRS","ACSEL"]
 }
 
 function finantial_statement(){
     
-    return ["CashEquivalents",
-            "CurrentAssetFinancialInvestments",
-            "TradeReceivables",
-            "OtherReceivables",
-            "CurrentAssetsDerivativeInstruments",
-            "Stocks",
-            "CurrentAssetsPrepaidExpenses",
-            "OtherCurrentAssets",
-            "TotalCurrentAssets"]
+    return ["CashAndCashEquivalents","FinancialLiabilities"]
             
 }
 
@@ -150,7 +142,7 @@ function drawChart(stockStatementName,chartData,stockStatementNameplshisse,hisse
                 type: 'line',
                 data: {
                     datasets: [{
-                        label: stockStatementName,
+                        label: stockStatementName+hisse,
                         data: chartData,
                         borderColor: 'rgb(75, 192, 192)',
                         fill: false
