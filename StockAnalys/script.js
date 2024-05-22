@@ -15,14 +15,14 @@ async function fetch_all_data_db(stockName,finantionalStatement) {
     }
 }
 
-function stockname_petrol(){
+function stockname_Büyükler(){
 
-    return ["TUPRS","ACSEL"]
+    return ["DGGYO","KCHOL","OYYAT"]
 }
 
 function finantial_statement(){
     
-    return ["CashAndCashEquivalents","FinancialLiabilities"]
+    return ["toplam_dönenvarlık","toplam_varlık","toplam_kısa_vadeli_yükümlülükler","toplam_uzun_vadeli_yükümlülükler","toplam_kaynak"]
             
 }
 
@@ -63,9 +63,14 @@ function createChartData(xList,yList) {
     
      xList.reverse();
      yList.reverse();
+
+     console.log(yList);
     const chartData = xList.map((x, index) => {
         // yList'ten karşılık gelen değeri almak için index'i kullanıyoruz
-        const y = parseFloat(yList[index].replace(/[^\d.-]/g, ''));
+
+         const floatValue = parseFloat(yList[index].replace(/\./g, ''));
+         const y = parseInt(Math.round(floatValue)); // Yuvarlayarak tam sayıya dönüştürüyoruz
+
         return {
             x: x,
             y: y
@@ -128,7 +133,7 @@ function createfinstatementelement(hisse,stockStatementName){
     }, 1000);
 
 }
-function drawChart(stockStatementName,chartData,stockStatementNameplshisse,hisse) {
+function drawChart(stockStatementName,chartData,hisse) {
 
 
 
@@ -207,8 +212,8 @@ async function setdrawer() {
         template: function (e) {
             const $list = $("<div/>").dxList({
                 items: [
-                    { id: 1, text: "electrik", path: "elect" },
-                    { id: 2, text: "petrol", path: "petrol" },
+                    { id: 1, text: "Büyükler", path: "Büyükler" },
+                    { id: 2, text: "electrik", path: "elect" },
                     { id: 3, text: "cam", path: "cam" },
                 ],
                 width: 200,
@@ -218,9 +223,9 @@ async function setdrawer() {
 
                 onSelectionChanged: async function (e) {
                     await $("#view").load("./pages/" + e.addedItems[0].path + ".html");
-                    if (e.addedItems[0].path == "petrol") {
+                    if (e.addedItems[0].path == "Büyükler") {
 
-                        stockname_petrol().forEach(async hisse => {
+                        stockname_Büyükler().forEach(async hisse => {
                             console.log("giriyor ")
 
                             await cretegeneralhtml(hisse);
@@ -228,19 +233,22 @@ async function setdrawer() {
 
                                 await createfinstatementelement(hisse,finantial_statement_name);
 
+                                
 
-                                 drawChart( finantial_statement_name, createChartData
-                                    (await CollectTimeData(
-                                        await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then(),
+                                 drawChart( finantial_statement_name, 
+
+
+                                    createChartData(
+                                        await CollectTimeData(await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then(),
                                         await CollectStockValueData(await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then()),
-                                         finantial_statement_name+hisse,hisse);
-
+                                           
+                                    hisse);
                             })
                         });
                 
 
 
-                      //await drawLineChart_example(chartTitle_petrol);
+                      //await drawLineChart_example(chartTitle_Büyükler);
                   } else if (e.addedItems[0].path == "cam") {
                       // Cam sayfasına özel bir değer ekle
                       $("#camValue").text("Cam Değeri: 200");
