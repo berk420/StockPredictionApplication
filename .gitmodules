@@ -1,6 +1,3 @@
 [submodule "stockAnalyst"]
 	path = stockAnalyst
 	url = https://github.com/berk420/stockAnalyst.git
-[submodule "StockData"]
-	path = StockData
-	url = https://github.com/berk420/StockData.git
