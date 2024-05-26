@@ -1,52 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\stockapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\stockapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\services\\stockdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\services\\stockdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\services\\istockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\services\\istockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\services\\istockdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\services\\istockdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|c:\\users\\berk\\documents\\github\\stockpredictionapplication\\stockapi\\stockapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0733EFB2-6DD6-4956-8FDB-042D9A9DECFD}|StockAPI\\StockAPI.csproj|solutionrelative:stockapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -54,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 236,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,140 +17,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StockService.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\StockService.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Services\\StockService.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\StockService.cs",
-              "RelativeToolTip": "StockAPI\\Services\\StockService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:36:08.418Z"
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StockDbService.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\StockDbService.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Services\\StockDbService.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\StockDbService.cs",
-              "RelativeToolTip": "StockAPI\\Services\\StockDbService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:34:52.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IStockService.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\IStockService.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Services\\IStockService.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\IStockService.cs",
-              "RelativeToolTip": "StockAPI\\Services\\IStockService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:34:01.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Program.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Program.cs",
-              "RelativeToolTip": "StockAPI\\Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwCQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:26:00.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IStockDbService.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\IStockDbService.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Services\\IStockDbService.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Services\\IStockDbService.cs",
-              "RelativeToolTip": "StockAPI\\Services\\IStockDbService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:33:26.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StocksController.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Controllers\\StocksController.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Controllers\\StocksController.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Controllers\\StocksController.cs",
-              "RelativeToolTip": "StockAPI\\Controllers\\StocksController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:29:29.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StockAPI.http",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.http",
-              "RelativeDocumentMoniker": "StockAPI\\StockAPI.http",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\StockAPI.http",
-              "RelativeToolTip": "StockAPI\\StockAPI.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-04-23T07:50:44.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Stock.cs",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Models\\Stock.cs",
-              "RelativeDocumentMoniker": "StockAPI\\Models\\Stock.cs",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Models\\Stock.cs",
-              "RelativeToolTip": "StockAPI\\Models\\Stock.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:31:44.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "StockAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "StockAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-23T07:26:27.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "StockAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\appsettings.json",
-              "RelativeToolTip": "StockAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-23T07:25:56.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "StockAPI\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\appsettings.Development.json",
-              "RelativeToolTip": "StockAPI\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-23T07:26:00.783Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

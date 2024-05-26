@@ -1,27 +1,44 @@
 .dx-overlay-content {
-    background-color:grey;
+
 }
-#view {
-    margin-left: 100px;
-    margin-top: 10px;
+#drawer {
     position: absolute;
+    width: 150px;
+    z-index: 9999; /* Z-indeksi koruyun */
+
+  }
+
+  #allelement{
+    display: flex; /* Flexbox kap haline getir */
+    align-items: center; /* Elemanları yatayda ortala */
+    margin-left: 100px;
+    left: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+#view {
+    margin-left: 10px;
+    margin-top: 10px;
+    position: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color:grey;
     display: flex;
     justify-content: center; /* İçeriği yatayda merkezlemek için */
     height: 100%; /* Ebeveynin yüksekliğini kaplamak için */
 
+
 }
 /* ... */
 #toolbar {
-    background-color: rgba(191, 191, 191, .15);
     padding: 5px 10px;
 }
 .dx-toolbar-button .dx-button {
-    background-color: rgba(191, 191, 191, -0.15);
     border: none;
 }
 .dx-toolbar-button > .dx-toolbar-item-content {
@@ -40,7 +57,6 @@
     width: 30%; /* div'in genişliği sayfanın genişliği kadar olacak */
     margin: 0; /* Varsayılan marjinleri kaldır */
     padding: 0; /* Varsayılan padding'i kaldır */
-    background-color:gold
 
 }
 
@@ -52,7 +68,39 @@
     width: 100%; /* div'in genişliği sayfanın genişliği kadar olacak */
     margin: 0; /* Varsayılan marjinleri kaldır */
     padding: 0; /* Varsayılan padding'i kaldır */
-    background-color:green
 
 }
+
+
+
+.welcome-container {
+    display: flex;
+    align-items: flex-start; /* Üst dayalı hale getirildi */
+    min-height: 100%; /* Div ekranın tamamını kaplaması için */
+    margin-left: 10px;
+
+}
+
+.welcome-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(26, 24, 24, 0.205);
+}
+
+.welcome-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #353b3f;
+}
+
+.welcome-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+
+
 
