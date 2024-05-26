@@ -1,13 +1,14 @@
 
 document.addEventListener("DOMContentLoaded", async function () {
     await setdrawer();
+
 });
 
 async function fetch_all_data_db(stockName,finantionalStatement) {
     try {
         const response = await fetch('https://localhost:7098/api/StockAPI/alldata');
         let data = await response.json();
-        const filteredData = await data.filter(row => row.hisse_adi ===stockName && row.bilanco_kalemi === finantionalStatement);        
+        const filteredData = await data.filter(row => row.hisse_adi ===stockName && row.bilanco_kalemi === finantionalStatement);      
         return filteredData;
         
     } catch (error) {
@@ -21,8 +22,13 @@ function stockname_Büyükler(){
 }
 
 function finantial_statement(){
-    
-    return ["toplam_dönenvarlık","toplam_varlık","toplam_kısa_vadeli_yükümlülükler","toplam_uzun_vadeli_yükümlülükler","toplam_kaynak"]
+    const toplam_dönen_varlıklar            ="_toplam dönen varlıklar";
+    const toplam_varlıklar                  ="_toplam varlıklar";
+    const toplam_kısa_vadeli_yükümlülükler  = "_toplam kısa vadeli yükümlülükler";
+    const toplam_uzun_vadeli_yükümlülükler  = "_toplam uzun vadeli yükümlülükler";
+    const toplam_özkaynaklar                = "_toplam özkaynaklar";
+    const toplam_kaynaklar                  ="_toplam kaynaklar";
+    return [toplam_dönen_varlıklar,toplam_varlıklar,toplam_kısa_vadeli_yükümlülükler,toplam_uzun_vadeli_yükümlülükler,toplam_özkaynaklar,toplam_kaynaklar]
             
 }
 
@@ -30,8 +36,10 @@ async function CollectTimeData(data,hisse,stockName) {
 
     let deger_nakit = [];
 
+
+
     data.forEach(async element => {
-        if (element.hisse_adi==hisse && element.bilanco_kalemi==stockName) { 
+        if (element.hisse_adi==hisse && element.bilanco_kalemi==hisse+stockName) { 
             await deger_nakit.push(element.zaman);
         }
     })
@@ -43,7 +51,7 @@ async function CollectStockValueData(data,hisse,stockName) {
     let deger_nakit = [];
 
     data.forEach(async element => {
-        if (element.hisse_adi==hisse && element.bilanco_kalemi==stockName) { 
+        if (element.hisse_adi==hisse && element.bilanco_kalemi==hisse+stockName) { 
             await deger_nakit.push(element.deger);
         }
     })
@@ -51,9 +59,11 @@ async function CollectStockValueData(data,hisse,stockName) {
 }
 
 function createChartData(xList,yList) {
+
+    console.log(xList);
+
     if (!Array.isArray(xList) || !Array.isArray(yList)) {
         console.error("not arr.");
-        console.log(typeof(xList));
         return []; // veya başka bir değer döndürün
     }
     else if(xList.length === 0 || yList.length === 0){
@@ -64,7 +74,6 @@ function createChartData(xList,yList) {
      xList.reverse();
      yList.reverse();
 
-     console.log(yList);
     const chartData = xList.map((x, index) => {
         // yList'ten karşılık gelen değeri almak için index'i kullanıyoruz
 
@@ -89,10 +98,6 @@ function cretegeneralhtml(hisse){
     setTimeout(function() {
         var allContainer = document.getElementById("allelement");
 
-        console.log("almaya çalıştı ")
-    
-        console.log(allContainer);
-    
     
         var hissediv = document.createElement("div");
         hissediv.id = hisse;
@@ -120,7 +125,6 @@ function createfinstatementelement(hisse,stockStatementName){
     setTimeout(function() {
 
         var hisseelement = document.getElementById(hisse);
-        console.log(hisseelement)
 
         var stocknamediv = document.createElement("canvas");
 
@@ -139,7 +143,6 @@ function drawChart(stockStatementName,chartData,hisse) {
 
         setTimeout(function() {
 
-            console.log(stockStatementName+"+"+hisse);
 
             var ctx =  document.getElementById(stockStatementName+hisse);
 
@@ -226,23 +229,28 @@ async function setdrawer() {
                     if (e.addedItems[0].path == "Büyükler") {
 
                         stockname_Büyükler().forEach(async hisse => {
-                            console.log("giriyor ")
 
                             await cretegeneralhtml(hisse);
                             finantial_statement().forEach(async finantial_statement_name=>{
 
                                 await createfinstatementelement(hisse,finantial_statement_name);
 
-                                
 
-                                 drawChart( finantial_statement_name, 
+                                let time_data =await CollectTimeData(
+                                    await fetch_all_data_db(hisse,hisse+finantial_statement_name),  
+                                    hisse,
+                                    finantial_statement_name).
+                                    then()
 
+                                    console.log(time_data);
 
-                                    createChartData(
-                                        await CollectTimeData(await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then(),
-                                        await CollectStockValueData(await fetch_all_data_db(hisse,finantial_statement_name),hisse,finantial_statement_name).then()),
-                                           
-                                    hisse);
+                                let value_data= await CollectStockValueData(
+                                    await fetch_all_data_db(hisse,hisse+finantial_statement_name),  
+                                    hisse,
+                                    finantial_statement_name).
+                                    then()
+
+                                 drawChart( finantial_statement_name,createChartData(time_data, value_data),hisse);
                             })
                         });
                 
