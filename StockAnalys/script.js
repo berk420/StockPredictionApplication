@@ -93,36 +93,63 @@ function createChartData(xList,yList) {
 
 function cretegeneralhtml(hisse){
 
-
-
     setTimeout(function() {
         var allContainer = document.getElementById("allelement");
+
+
+        var heading = document.createElement("h4"); // You can change "h1" to "h2", "h3", etc., as needed
+
+        // Set the text content of the heading
+        heading.textContent = hisse;
+        
+        heading.style.width = "auto";
+        heading.style.height = "50px";
+        heading.style.width = "auto";
+        heading.style.height = "50px";
+        heading.style.margin = "0 auto"; // Center horizontally
+        heading.style.marginBottom = "-20px"; // Add margin at the bottom
+        heading.style.marginTop = "20px"; // Add margin at the top
+        heading.style.marginLeft = "auto"; // Center horizontally
+        heading.style.marginRight = "auto"; // Center horizontally
+        heading.style.fontFamily = "Arial, sans-serif"; // Set font to Arial
+        heading.style.textAlign = "center";
+        heading.style.color = "Grey"; // Change font color to blue (or any other color you want)
+
+
+
+
 
     
         var hissediv = document.createElement("div");
         hissediv.id = hisse;
     
-        hissediv.style.display = "stretch";
+        hissediv.style.display = "center";
         hissediv.style.flexDirection = "row";
-        hissediv.style.alignItems = "start";
-        hissediv.style.justifyContent = "start";
+        hissediv.style.alignItems = "center";
+        hissediv.style.justifyContent = "center";
         hissediv.style.width = "300px";
+        hissediv.style.left = "300px";
+
+
         hissediv.style.height = "100%";
     
         hissediv.style.margin = "10";
         hissediv.style.padding = "10";
-        hissediv.style.backgroundColor = "gold";
-        hissediv.style.border = "2px solid black";
     
         allContainer.appendChild(hissediv);
+        hissediv.appendChild(heading);
+
+
      
-    }, 1000);
+    }, 100);
     
 
 }
 
 function createfinstatementelement(hisse,stockStatementName){
     setTimeout(function() {
+
+        
 
         var hisseelement = document.getElementById(hisse);
 
@@ -131,18 +158,15 @@ function createfinstatementelement(hisse,stockStatementName){
         stocknamediv.id=stockStatementName+hisse;
         stocknamediv.style.width = "100%";
         stocknamediv.style.height = "200px";
-        stocknamediv.style.border = "2px solid black";
+
         hisseelement.appendChild(stocknamediv);
 
-    }, 1000);
+    }, 100);
 
 }
 function drawChart(stockStatementName,chartData,hisse) {
 
-
-
         setTimeout(function() {
-
 
             var ctx =  document.getElementById(stockStatementName+hisse);
 
@@ -150,7 +174,7 @@ function drawChart(stockStatementName,chartData,hisse) {
                 type: 'line',
                 data: {
                     datasets: [{
-                        label: stockStatementName+hisse,
+                        label: stockStatementName,
                         data: chartData,
                         borderColor: 'rgb(75, 192, 192)',
                         fill: false
@@ -179,9 +203,7 @@ function drawChart(stockStatementName,chartData,hisse) {
                     }
                 }
             });
-    }, 2000);
-
-
+    }, 200);
 }
 
 async function createRandomChartData() {
@@ -201,13 +223,14 @@ async function createRandomChartData() {
 async function setdrawer() {
     $("#drawer").dxDrawer({
         template: function (e) {
-            return $("<div style='width: 150px'>Drawer content</div>");
+            return $("<div style='width: 50px'>Drawer content</div>");
         },
         height: 250,
-        minSize: 37,
+        minSize: 50,
         opened: true,
-
+        
     });
+
     $("#view").load("index.html");
 
     const drawer = $("#drawer").dxDrawer({  
@@ -215,18 +238,21 @@ async function setdrawer() {
         template: function (e) {
             const $list = $("<div/>").dxList({
                 items: [
-                    { id: 1, text: "Büyükler", path: "Büyükler" },
-                    { id: 2, text: "electrik", path: "elect" },
-                    { id: 3, text: "cam", path: "cam" },
+                    { id: 1, text: "Top 3 şirket", path: "Top" },
+                    //{ id: 2, text: "electrik", path: "elect" },
+                    //{ id: 3, text: "cam", path: "cam" },
                 ],
-                width: 200,
+
+                width: 100,
                 selectionMode: "single",
                 revealMode: "expand",
                 openedStateMode: "overlap",
+                swipeEnabled: false,
+                closeOnOutsideClick: false,
 
                 onSelectionChanged: async function (e) {
                     await $("#view").load("./pages/" + e.addedItems[0].path + ".html");
-                    if (e.addedItems[0].path == "Büyükler") {
+                    if (e.addedItems[0].path == "Top") {
 
                         stockname_Büyükler().forEach(async hisse => {
 
@@ -253,9 +279,6 @@ async function setdrawer() {
                                  drawChart( finantial_statement_name,createChartData(time_data, value_data),hisse);
                             })
                         });
-                
-
-
                       //await drawLineChart_example(chartTitle_Büyükler);
                   } else if (e.addedItems[0].path == "cam") {
                       // Cam sayfasına özel bir değer ekle
@@ -276,6 +299,7 @@ async function setdrawer() {
 
     }).dxDrawer("instance");
 
+    /*
     $("#toolbar").dxToolbar({
         items: [{
             widget: "dxButton",
@@ -288,4 +312,5 @@ async function setdrawer() {
             }
         }]
     });
+    */
 }
