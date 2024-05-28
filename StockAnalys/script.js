@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 async function fetch_all_data_db(stockName,finantionalStatement) {
     try {
-        const response = await fetch('https://localhost:7098/api/StockAPI/alldata');
+//        const response = await fetch('https://localhost:7098/api/StockAPI/alldata');
+        const response = await fetch('https://berk420.github.io/StockPredictionApplication/stock_endpoint.json');
+
         let data = await response.json();
         const filteredData = await data.filter(row => row.hisse_adi ===stockName && row.bilanco_kalemi === finantionalStatement);      
         return filteredData;
