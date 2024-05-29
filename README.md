@@ -1,3 +1,10 @@
+## Some information about StockAPI
+- I used Attribute Routing for URLs map to controller actions
+
+## StockAPI need feature like:
+- Route Constraints
+- Content Negatiation
+- 
 ## CI/CD proccess
 - It is deploying via main branch
 - Host service are Netlify
