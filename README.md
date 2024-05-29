@@ -4,7 +4,7 @@
 ## StockAPI need feature like:
 - Route Constraints
 - Content Negatiation
-- 
+- More endpoint for spesific industry's balance sheet item (according to StockAnalyz)
 ## CI/CD proccess
 - It is deploying via main branch
 - Host service are Netlify
