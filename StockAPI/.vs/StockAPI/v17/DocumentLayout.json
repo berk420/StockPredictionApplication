@@ -42,8 +42,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 236,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{33c88fe3-43b3-374e-9aac-c4679036dce0}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -54,8 +58,7 @@
               "RelativeToolTip": "StockAPI\\StockAPI.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-05-29T08:46:22.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:46:22.522Z"
             },
             {
               "$type": "Document",
@@ -65,7 +68,7 @@
               "RelativeDocumentMoniker": "StockAPI\\Controllers\\StocksController.cs",
               "ToolTip": "C:\\Users\\berk\\Documents\\GitHub\\StockPredictionApplication\\StockAPI\\StockAPI\\Controllers\\StocksController.cs",
               "RelativeToolTip": "StockAPI\\Controllers\\StocksController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T08:35:52.839Z",
               "EditorCaption": ""
@@ -80,8 +83,7 @@
               "RelativeToolTip": "StockAPI\\Models\\Stock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:35:47.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:35:47.825Z"
             },
             {
               "$type": "Document",
@@ -93,12 +95,7 @@
               "RelativeToolTip": "StockAPI\\Services\\IStockService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:32:41.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{33c88fe3-43b3-374e-9aac-c4679036dce0}"
+              "WhenOpened": "2024-05-29T08:32:41.585Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "StockAPI\\Services\\StockDbService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:32:09.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:32:09.623Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "StockAPI\\Services\\StockService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:32:00.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:32:00.308Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "StockAPI\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:31:16.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:31:16.602Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "StockAPI\\Services\\IStockDbService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:32:47.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:32:47.748Z"
             }
           ]
         }
