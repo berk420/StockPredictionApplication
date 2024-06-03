@@ -1,14 +1,14 @@
 # Release Note
 
-## Upcoming features 2.1.0
+## 2.1.0 (Upcoming features) 
 - Iron and steel industry will be added
--You will be able to see the balance sheet values ​​in dollar basis
+- You will be able to see the balance sheet values ​​in dollar basis
 
 ## 2.0.0
--Frontend technologies chenged
- Javascript -> Typescript
- Framework Next.js 
- Library React.js, Google Fonts
+- Frontend technologies chenged
+- Javascript -> Typescript
+- New Framework Next.js 
+- Library added React.js, Google Fonts instead of DevExtreme
 
 ## 1.0.1
 - Drawer and layout will be fix
