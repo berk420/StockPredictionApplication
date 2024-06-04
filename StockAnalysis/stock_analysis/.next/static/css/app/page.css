@@ -1,0 +1,17 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/style.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.style_allElement__6O7m7 {
+    display: flex; /* Flexbox düzenini kullan */
+    flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
+    align-items: center; /* Elemanları dikeyde ortala */
+    justify-content: start; /* Elemanları yatayda başlangıca hizala */
+    width: 100%; /* div'in genişliği sayfanın genişliği kadar olacak */
+    margin: 0; /* Varsayılan marjinleri kaldır */
+    padding: 0; /* Varsayılan padding'i kaldır */
+    flex-wrap: nowrap; /* Elemanların tek satırda kalmasını sağla */
+    background-color: rgb(255, 255, 255); /* Arka plan rengi açık gri yap */
+    z-index: 9999; /* Z-indeksi koruyun */
+
+}
+
