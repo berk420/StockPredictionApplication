@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { fetchData } from './DataService/pages';
 import styles from './style.module.css';
-import { createGeneralHtml, drawLineChart, financialStatementGraph } from './DomHandler/page';
+import { createGeneralHtml, drawLineChart, financialStatementGraph } from './DomHandler/pages';
 import { financial_statement, stock_name } from './StockType/pages';
 
 export default function Home() {
