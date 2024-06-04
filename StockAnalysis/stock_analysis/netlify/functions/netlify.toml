@@ -2,6 +2,7 @@
   base = "stock_analysis"
   publish = "stock_analysis/.next"
   command = "npm install && npm run build"
+  functions = "netlify/functions"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
