@@ -25,13 +25,12 @@ export default function Home() {
             });
         });
     }
-
     useEffect(() => {
         if (sayac) {
-            getData();
+          getData();
         }
-    }, []);
-
+      }, [sayac]); // Bağımlılık dizisine "sayac" eklendi.
+      
     return (
         <div className={styles.allElement} id="allelement"></div>
     );
