@@ -1,4 +1,4 @@
-import { fetchData, Data, Error } from '../DataService/route';
+import { fetchData, Data, Error } from '../DataService/pages';
 
 
 export async function CollectTimeData(response: Data | Error, stock_name: string, financial_statement: string): Promise<string[]> {

@@ -1,7 +1,7 @@
 
 import { CollectTimeData,CollectStockValueData,createChartData} from '../ChartDataPrepare/pages';
 import Chart from 'chart.js/auto'; // Chart.js kütüphanesini import edin
-import { fetchData, Data, Error } from '../DataService/route';
+import { fetchData, Data, Error } from '../DataService/pages';
 
 export async function drawLineChart(data: Data | Error, stock_name: string, financial_statement: string, element :string) {
     if ('error' in data) {

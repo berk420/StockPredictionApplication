@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect } from 'react';
-import { fetchData } from './DataService/route';
+import { fetchData } from './DataService/pages';
 import styles from './style.module.css';
 import { createGeneralHtml, drawLineChart, financialStatementGraph } from './DomHandler/page';
-import { financial_statement, stock_name } from './StockType/page';
+import { financial_statement, stock_name } from './StockType/pages';
 
 export default function Home() {
     let sayac: boolean = true;
