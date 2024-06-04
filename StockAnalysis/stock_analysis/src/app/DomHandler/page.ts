@@ -1,5 +1,5 @@
 
-import { CollectTimeData,CollectStockValueData,createChartData} from '../ChartDataPrepare/page';
+import { CollectTimeData,CollectStockValueData,createChartData} from '../ChartDataPrepare/pages';
 import Chart from 'chart.js/auto'; // Chart.js kütüphanesini import edin
 import { fetchData, Data, Error } from '../DataService/route';
 
