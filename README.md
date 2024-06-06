@@ -3,6 +3,9 @@
 ## 2.2.0 (Upcoming features) 
 - Iron and steel industry will be added
 - UI developing
+- You will be able to see the balance sheet values ​​in gold basis
+- Add a combo box to show the chart values ​​in which basis (TL, dollar, gold)
+
 
 ## 2.1.0 
 - You will be able to see the balance sheet values ​​in dollar basis
