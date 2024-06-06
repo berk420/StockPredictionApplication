@@ -41,7 +41,7 @@ const Layout = ({ children }: LayoutProps) => {
                             <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
                                 Stock Dashboard
                             </Typography>
-                            <Typography variant="h7" noWrap component="div" sx={{ flexGrow: 1 ,alignContent:'center'}}>
+                            <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 ,alignContent:'center'}}>
                                 Dolar bazında bilanço verileri
                             </Typography>
 
