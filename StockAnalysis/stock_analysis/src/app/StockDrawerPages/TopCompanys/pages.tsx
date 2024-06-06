@@ -1,4 +1,4 @@
-export default function TopCompany (){
+export default function topCompany (){
 
     return<h1>TOP COMPNY</h1>
 

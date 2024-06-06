@@ -1,4 +1,4 @@
-// File: C:\Users\berk\Desktop\pass to react\stock_analysis\src\app\layout.tsx
+// File: C:\Users\berk\Documents\GitHub\StockPredictionApplication\StockAnalysis\stock_analysis\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

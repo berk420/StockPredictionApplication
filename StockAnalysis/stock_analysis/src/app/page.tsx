@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { fetchData } from './DataService/pages';
 import styles from './style.module.css';
 import { createGeneralHtml, drawLineChart, financialStatementGraph } from './DomHandler/pages';
-import { financial_statement, stock_name } from './StockType/pages';
+import { financial_statement, stock_name ,stock_long_name,financial_statement_Name} from './StockType/pages';
 
 export default function Home() {
     let sayac: boolean = true;
@@ -12,7 +12,7 @@ export default function Home() {
         sayac = false;
 
         (await stock_name().then()).forEach(async stock_name => {
-            await createGeneralHtml(stock_name);
+            await createGeneralHtml(stock_name,await stock_long_name(stock_name));
             (await financial_statement().then()).forEach(async financial_statement => {
                 await financialStatementGraph(stock_name, financial_statement);
 
