@@ -1,7 +1,9 @@
 
-import { CollectTimeData,CollectStockValueData,createChartData} from '../ChartDataPrepare/pages';
+import { CollectTimeData,CollectStockValueData,CreateChartData} from '../ChartDataPrepare/pages';
 import Chart from 'chart.js/auto'; // Chart.js kütüphanesini import edin
 import { fetchData, Data, Error } from '../DataService/pages';
+import { financial_statement, stock_name ,stock_long_name,financial_statement_Name} from '../StockType/pages';
+
 
 export async function drawLineChart(data: Data | Error, stock_name: string, financial_statement: string, element :string) {
     if ('error' in data) {
@@ -9,10 +11,11 @@ export async function drawLineChart(data: Data | Error, stock_name: string, fina
         return;
     }
 
-    const chartData = createChartData(
+    const chart_data = CreateChartData(
         await CollectTimeData(data, stock_name, financial_statement),
         await CollectStockValueData(data, stock_name, financial_statement)); // Örnek xList
 
+        console.log(await CollectTimeData(data, stock_name, financial_statement));
     const ctx = document.getElementById(element) as HTMLCanvasElement;
 
     const existingChart = Chart.getChart(element);
@@ -25,8 +28,8 @@ export async function drawLineChart(data: Data | Error, stock_name: string, fina
         data: {
             
             datasets: [{
-                label: financial_statement,
-                data: chartData,
+                label: await financial_statement_Name(financial_statement),
+                data: chart_data,
                 fill: false,
                 borderColor: 'rgb(75, 192, 192)',
                 tension: 0.1
@@ -37,13 +40,13 @@ export async function drawLineChart(data: Data | Error, stock_name: string, fina
                 x: {
                     title: {
                         display: true,
-                        text: 'Time'
+                        text: ''
                     }
                 },
                 y: {
                     title: {
                         display: true,
-                        text: 'Value'
+                        text: ''
                     }
                 }
             }
@@ -52,7 +55,7 @@ export async function drawLineChart(data: Data | Error, stock_name: string, fina
 
     
 }
-export async function createGeneralHtml(hisse: string): Promise<void> {
+export async function createGeneralHtml(hisse: string, hisse_name:string): Promise<void> {
     return new Promise<void>((resolve) => {
         setTimeout(() => {
             const allContainer = document.getElementById("allelement");
@@ -66,7 +69,7 @@ export async function createGeneralHtml(hisse: string): Promise<void> {
             const heading = document.createElement("h4");
 
             // Set the text content of the heading
-            heading.textContent = hisse;
+            heading.textContent = hisse_name;
             heading.style.width = "auto";
             heading.style.height = "50px";
             
