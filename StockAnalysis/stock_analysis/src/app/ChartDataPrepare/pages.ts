@@ -97,9 +97,9 @@ export function CreateChartData(x_list: string[], y_list: number[]): { x: string
     
         try {
             if (!Array.isArray(x_list) || !Array.isArray(y_list)) {
-                throw new Error("Input lists are not arrays.");
+                //throw new Error("Input lists are not arrays.");
             } else if (x_list.length === 0 || y_list.length === 0) {
-                throw new Error("Input lists are empty.");
+                //throw new Error("Input lists are empty.");
             }
     
             x_list.reverse();
