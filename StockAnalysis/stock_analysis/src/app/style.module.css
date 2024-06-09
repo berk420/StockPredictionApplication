@@ -1,13 +1,83 @@
+.pages {
+    display: flex; /* Flexbox düzenini kullan */
+    flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
+    background-color: rgba(255, 255, 255, 0.233); /* Arka plan rengi beyaz */
+    z-index: 99;
+    width: 100%; /* Genişliği 15% */
+    height: 100%; /* Yüksekliği 50% */
+    gap: 25px; /* Elemanlar arasına 20px boşluk ekler */
+}
+
 .allElement {
     display: flex; /* Flexbox düzenini kullan */
     flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
     align-items: center; /* Elemanları dikeyde ortala */
     justify-content: start; /* Elemanları yatayda başlangıca hizala */
-    width: 100%; /* div'in genişliği sayfanın genişliği kadar olacak */
+    width: auto; /* div'in genişliği sayfanın genişliği kadar olacak */
     margin: 0; /* Varsayılan marjinleri kaldır */
     padding: 0; /* Varsayılan padding'i kaldır */
-    flex-wrap: nowrap; /* Elemanların tek satırda kalmasını sağla */
-    background-color: rgb(255, 255, 255); /* Arka plan rengi açık gri yap */
-    z-index: 9999; /* Z-indeksi koruyun */
+    background-color: rgb(255, 255, 255); /* Arka plan rengi beyaz */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Hafif gri border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Şık gölge efekti */
+    border-radius: 8px; /* Kenarları yuvarlat */
+}
 
+.toolside {
+    display: flex; /* Flexbox düzenini kullan */
+    flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
+   
+    width: 200px; /* Genişliği 15% */
+    height: 300px; /* Yüksekliği 50% */
+    background-color: #EEEEEE; /* Arka plan rengi beyaz */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Hafif gri border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Şık gölge efekti */
+    border-radius: 8px; /* Kenarları yuvarlat */
+    padding: 10px; /* İçerik ile border arasında boşluk */
+}
+
+
+/* style.module.css */
+.dropdown {
+    width: 200px; /* Dropdown genişliği */
+  }
+.dropdowntrigger{
+    width: 100px;
+}
+  
+.dropdownButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dropdownMenu {
+    background-color: #ffffff; /* Menü arka plan rengi */
+    border: 1px solid #ccc; /* Menü border rengi */
+    border-radius: 8px; /* Menü köşe yuvarlaklığı */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menü gölge efekti */
+  }
+  
+  .dropdownItem {
+    padding: 8px 12px; /* Menü öğesi iç boşluk */
+    cursor: pointer; /* Menü öğesi işaretçi */
+  }
+
+  .caret {
+    border-top: 5px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  /* Tüm TableCell elemanlarını hedefleme */
+.tableCell {
+    display: flex; /* Flexbox düzenini kullan */
+    align-items: center; /* Elemanları dikeyde ortala */
+    background-color: #f9f9f9;
+  }
+  
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

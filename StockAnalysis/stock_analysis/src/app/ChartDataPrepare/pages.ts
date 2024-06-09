@@ -51,7 +51,7 @@ export function CreateChartData(x_list: string[], y_list: number[]): { x: string
 */
 
   
-export function CreateChartData(x_list: string[], y_list: number[]): { x: string, y: number }[] {
+export function CreateChartData(x_list: string[], y_list: number[],selectedCurrency:string): { x: string, y: number }[] {
     
     const exchangeRates: Record<string, number> = {
         '2024/3': 31.38,
@@ -94,7 +94,6 @@ export function CreateChartData(x_list: string[], y_list: number[]): { x: string
     };
     
     
-    
         try {
             if (!Array.isArray(x_list) || !Array.isArray(y_list)) {
                 //throw new Error("Input lists are not arrays.");
@@ -111,7 +110,16 @@ export function CreateChartData(x_list: string[], y_list: number[]): { x: string
                 if (exchangeRate === undefined) {
                     //throw new Error(`Exchange rate not found for date: ${x}`);
                 }
-                const convertedY: number = y / exchangeRate;
+                let convertedY: number = 0;
+
+                if (selectedCurrency === "Lira") {
+                    convertedY = y;
+                } else if (selectedCurrency === "Dollar") {
+                    convertedY = y / exchangeRate;
+                }
+                
+
+
                 return {
                     x: x,
                     y: convertedY
