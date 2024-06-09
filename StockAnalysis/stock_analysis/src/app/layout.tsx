@@ -2,10 +2,7 @@
 
 import React, { ReactNode, useState } from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText, CssBaseline, Box } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-
-import Link from 'next/link';
-import { Button } from '@mui/material';
+import Icon from '@mui/material/Icon';
 
 interface LayoutProps {
     children: ReactNode;
@@ -22,14 +19,17 @@ const Layout = ({ children }: LayoutProps) => {
         <html lang="en">
             <head>
                 {/* Burada head içeriğini ekleyebilirsiniz */}
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
             </head>
             <body>
                 <Box sx={{ display: 'flex' }}>
                     <CssBaseline />
 
-                    <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: 'gray' }}>
+                    <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#EEEEEE' }}>
                         <Toolbar>
-                            <IconButton
+                            
+                            {/* <IconButton
                                 edge="start"
                                 color="inherit"
                                 aria-label="open drawer"
@@ -37,17 +37,13 @@ const Layout = ({ children }: LayoutProps) => {
                                 sx={{ mr: 2 }}
                             >
                                 <MenuIcon />
-                            </IconButton>
-                            <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-                                Stock Dashboard
+                            </IconButton> */}
+                            <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1,color:'black' }} >
+                                Stock Analysis
                             </Typography>
-                            <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 ,alignContent:'center'}}>
-                                Dolar bazında bilanço verileri
-                            </Typography>
-
                         </Toolbar>
                     </AppBar>
-
+{/* 
                     <Drawer
                         anchor="left"
                         open={drawerOpen}
@@ -73,7 +69,8 @@ const Layout = ({ children }: LayoutProps) => {
                                 ))}
                             </List>
                         </Box>
-                    </Drawer>
+                    </Drawer> */}
+                    
                     <Box
                         component="main"
                         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
@@ -81,6 +78,7 @@ const Layout = ({ children }: LayoutProps) => {
                         <Toolbar />
                         {children}
                     </Box>
+                    
                 </Box>
             </body>
         </html>
