@@ -1,3 +1,6 @@
+## Web site url 
+- https://main--stockanalysisandprediction.netlify.app/
+
 # Release Note
 
 ## features will be added
