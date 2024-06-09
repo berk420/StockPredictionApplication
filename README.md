@@ -4,6 +4,7 @@
 # Release Note
 
 ## features will be added
+- Show data by years
 - Loading icon animation (during componenet loading )
 - Iron and steel industry etc. will be added
 - Change StockAPI controllers code structure as lambada expression and expresson tree
@@ -11,7 +12,9 @@
 - API have to be deployed via Azure app service
 - Communication between Database and .NET web api will be Dapper
 - Add Vendor (Redis) to API
-- Query folder will be add for API 
+- Query folder will be add for API
+
+- More feature on the way...
 
 ## 2.3.0 (Upcoming features)
 - Able to see the balance sheet values ​​in gold basis
