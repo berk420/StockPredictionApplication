@@ -1,11 +1,11 @@
 
 import { CollectTimeData,CollectStockValueData,CreateChartData} from '../ChartDataPrepare/pages';
 import Chart from 'chart.js/auto'; // Chart.js kütüphanesini import edin
-import { fetchData, Data, Error } from '../DataService/pages';
+import { fetchData, Data, FetchError } from '../DataService/pages';
 import { financial_statement, stock_name ,stock_long_name,financial_statement_Name} from '../StockType/pages';
 
 
-export async function drawLineChart(data: Data | Error, stock_name: string, financial_statement: string, selectedCurrency :string) {
+export async function drawLineChart(data: Data | FetchError, stock_name: string, financial_statement: string, selectedCurrency :string) {
     if ('error' in data) {
         console.error('Error:', data.error);
         return;
