@@ -47,23 +47,6 @@ export function CreateChartData(x_list: string[], y_list: number[],selectedCurre
         '2019/12': 5.80,
         '2019/9': 5.71,
         '2019/6': 5.80,
-        '2019/3': 0,
-        '2018/12': 0,
-        '2018/9': 0,
-        '2018/6': 0,
-        '2018/3': 0,
-        '2017/12':0,
-        '2017/9': 0,
-        '2017/6': 0,
-        '2017/3': 0,
-        '2016/12':0,
-        '2016/9': 0,
-        '2016/6': 0,
-        '2016/3': 0,
-        '2015/12':0,
-        '2015/9': 0,
-        '2015/6': 0,
-        '2015/3': 0,
     };
 
     const gold_rates: Record<string, number> = {
@@ -83,34 +66,13 @@ export function CreateChartData(x_list: string[], y_list: number[],selectedCurre
         '2020/12':460,
         '2020/9': 466,
         '2020/6': 370,
-        '2020/3': 0,
-        '2019/12':0,
-        '2019/9': 0,
-        '2019/6': 0,
-        '2019/3':0 ,
-        '2018/12':0,
-        '2018/9': 0,
-        '2018/6': 0,
-        '2018/3': 0,
-        '2017/12':0,
-        '2017/9': 0,
-        '2017/6': 0,
-        '2017/3': 0,
-        '2016/12':0,
-        '2016/9': 0,
-        '2016/6': 0,
-        '2016/3': 0,
-        '2015/12':0,
-        '2015/9': 0,
-        '2015/6': 0,
-        '2015/3': 0,
     };
 
         try {
             if (!Array.isArray(x_list) || !Array.isArray(y_list)) {
-                //throw new Error("Input lists are not arrays.");
+                throw new Error("Input lists are not arrays.");
             } else if (x_list.length === 0 || y_list.length === 0) {
-                //throw  Error("Input lists are empty.");
+                throw  new Error("Input lists are empty.");
             }
     
             x_list.reverse();
@@ -128,8 +90,6 @@ export function CreateChartData(x_list: string[], y_list: number[],selectedCurre
                     convertedY = y_list[index] / gold_rates[x];
                 }
                 
-
-
                 return {
                     x: x,
                     y: convertedY

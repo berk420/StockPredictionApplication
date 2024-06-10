@@ -9,10 +9,16 @@
 - Communication between Database and .NET web api will be Dapper
 - Add Vendor (Redis) to API
 - Query folder will be add for API 
-
-## 2.3.0 (Upcoming features)
-- Able to see the balance sheet values ​​in gold basis
+- Route Constraints for API
+- Content Negatiation for API
+- More endpoint for spesific industry's balance sheet item in API (according to StockAnalyz)
 - Iron and steel industry etc. will be added
+
+## 2.4.0 (Upcoming)
+- Current stock price information will be add and data will take via alphavantage.co API
+
+## 2.3.0 
+- Able to see the balance sheet values ​​in gold basis
 - Revise to ToolSide
 
 ## 2.2.0 
@@ -51,9 +57,7 @@
 - I used Attribute Routing for URLs map to controller actions
 
 ## StockAPI need feature like:
-- Route Constraints
-- Content Negatiation
-- More endpoint for spesific industry's balance sheet item (according to StockAnalyz)
+
 
 ## CI/CD proccess
 - It is deploying via main branch
