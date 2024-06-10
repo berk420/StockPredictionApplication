@@ -68,15 +68,17 @@ export default function Home() {
         <TableCell className={styles.tableCell}>
 
           <Dropdown className={styles.dropdown}>
-                                    <DropdownTrigger className={styles.dropdowntrigger}>
-                                    <Button className={styles.dropdownButton} variant="bordered" endContent={<ArrowDropDownIcon />}>
-                                    {selectedCurrency}
-                                        </Button>
-                                    </DropdownTrigger>
-                                    <DropdownMenu className={styles.dropdownMenu}>
-                                        <DropdownItem className={styles.dropdownItem} onClick={() => handleSelectChange('Lira')}>Lira</DropdownItem>
-                                        <DropdownItem className={styles.dropdownItem} onClick={() => handleSelectChange('Dollar')}>Dollar</DropdownItem>
-                                    </DropdownMenu>
+            <DropdownTrigger className={styles.dropdowntrigger}>
+            <Button className={styles.dropdownButton} variant="bordered" endContent={<ArrowDropDownIcon />}>
+            {selectedCurrency}
+                </Button>
+            </DropdownTrigger>
+            <DropdownMenu className={styles.dropdownMenu}>
+                <DropdownItem className={styles.dropdownItem} onClick={() => handleSelectChange('Lira')}>Lira</DropdownItem>
+                <DropdownItem className={styles.dropdownItem} onClick={() => handleSelectChange('Dollar')}>Dollar</DropdownItem>
+                <DropdownItem className={styles.dropdownItem} onClick={() => handleSelectChange('Gold')}>Gold</DropdownItem>
+
+            </DropdownMenu>
           </Dropdown>
 
           </TableCell>
