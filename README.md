@@ -1,6 +1,10 @@
+## Web site url 
+- https://main--stockanalysisandprediction.netlify.app/
+
 # Release Note
 
 ## features will be added
+- Show data by years
 - Loading icon animation (during componenet loading )
 - Iron and steel industry etc. will be added
 - Change StockAPI controllers code structure as lambada expression and expresson tree
@@ -8,17 +12,18 @@
 - API have to be deployed via Azure app service
 - Communication between Database and .NET web api will be Dapper
 - Add Vendor (Redis) to API
-- Query folder will be add for API 
 - Route Constraints for API
 - Content Negatiation for API
 - More endpoint for spesific industry's balance sheet item in API (according to StockAnalyz)
 - Iron and steel industry etc. will be added
+- Query folder will be add for API
+- More feature on the way...
 
 ## 2.4.0 (Upcoming)
 - Current stock price information will be add and data will take via alphavantage.co API
 
 ## 2.3.0 
-- Able to see the balance sheet values ​​in gold basis
+- Able to see the balance sheet values in gold basis
 - Revise to ToolSide
 
 ## 2.2.0 
@@ -40,24 +45,21 @@
 - File stracture will be more readable
 - Finallly, web site will be publish
 
+## Programing paradigms
+- StockAPI are OOP
+- StockAnalysis are Declarative, Imperative and Asynchronous  programing
+
 # Some information about whole project
 - The development model is Git Flow
 - Database managment system: PostgreSQL
 - Web server: Github pages (it's will be azure soon)
 - Communication between Database and API Raw SQL
 
-## Programing paradigms
-- StockAPI are OOP
-- StockAnalysis are Declarative, Imperative and Asynchronous  programing
-
 ## Some information about StockAnalysis
 - commonly used architecture in React/Next.js Modular Architecture,so i used.
 
 ## Some information about StockAPI
 - I used Attribute Routing for URLs map to controller actions
-
-## StockAPI need feature like:
-
 
 ## CI/CD proccess
 - It is deploying via main branch
