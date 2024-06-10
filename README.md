@@ -12,15 +12,18 @@
 - API have to be deployed via Azure app service
 - Communication between Database and .NET web api will be Dapper
 - Add Vendor (Redis) to API
-- Query folder will be add for API
 - Route Constraints for API
 - Content Negatiation for API
 - More endpoint for spesific industry's balance sheet item in API (according to StockAnalyz)
+- Iron and steel industry etc. will be added
+- Query folder will be add for API
 - More feature on the way...
 
-## 2.3.0 (Upcoming features)
-- Able to see the balance sheet values ​​in gold basis
-- Iron and steel industry etc. will be added
+## 2.4.0 (Upcoming)
+- Current stock price information will be add and data will take via alphavantage.co API
+
+## 2.3.0 
+- Able to see the balance sheet values in gold basis
 - Revise to ToolSide
 
 ## 2.2.0 

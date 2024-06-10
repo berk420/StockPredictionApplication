@@ -1,5 +1,4 @@
 const {Builder,By} = require("selenium-webdriver");
-const {} = require("./test/financial_statement_values.js");
 
 async function CollectData(stock,tableX,tableY) {
   let driver = await new Builder().forBrowser('chrome').build();
@@ -9,24 +8,26 @@ async function CollectData(stock,tableX,tableY) {
   await driver.navigate().refresh();
   await new Promise(resolve => setTimeout(resolve, 500));
     let arr_time = await [];
-  for (let i = 0; i < 4; i++) {// ne kadar geriye gidebileceğini gösteriyor
+  for (let i = 0; i < 3; i++) {// ne kadar geriye gidebileceğini gösteriyor
     try {
-      for (let j = 2; j <= 6; j++) {
-        await arr_time.push([await driver.findElement(By.xpath(`//*[@id="${stock}"]/div[5]/div[1]/div/main/div/div/div[3]/div[4]/table[1]/thead/tr/th[${j}]/div/div`)).getText().then(),
-                              await driver.findElement(By.xpath(`//*[@id="${stock}"]/div[5]/div[1]/div/main/div/div/div[3]/div[4]/table[2]/tbody[${tableX}]/tr[${tableY+1}]/td[${j}]/div/span[2]`)).getText().then().catch(() => "-")
-      ]);
-  
-        if(j==6){
+      for (let j = 2; j <= 6; j++) {                             //*[@id="DGGYO"]   /div[4]/div/div/main/div[1]/div/div[3]/div[4]/table[1]/thead/tr/th[2]/div/div
+        await arr_time.push([await driver.findElement(By.xpath( `//*[@id="${stock}"]/div[4]/div/div/main/div[1]/div/div[3]/div[4]/table[1]/thead/tr/th[${j}]/div/div`)).getText().then(),
+                              await driver.findElement(By.xpath(`//*[@id="${stock}"]/div[4]/div/div/main/div[1]/div/div[3]/div[4]/table[2]/tbody[${tableX}]/tr[${tableY+1}]/td[${j}]/div/span[2]`)).getText().then().catch(() => "-")
+      ]);                                                        //*[@id="DGGYO"]   /div[4]/div/div/main/div[1]/div/div[3]/div[4]/table[2]/tbody[1]/tr[9]/td[2]/div/span[2]
+
+
+      if(j==6){
           await new Promise(resolve => setTimeout(resolve, 500));
-          for (let i = 0; i < 5; i++) {
-            await driver.findElement(By.xpath(`//*[@id="${stock}"]/div[5]/div[1]/div/main/div/div/div[3]/div[4]/table[1]/thead/tr/th[6]/div/button`)).click();
+          for (let i = 0; i < 5; i++) {        //*[@id="DGGYO"]   /div[4]/div/div/main/div[1]/div/div[3]/div[4]/table[1]/thead/tr/th[6]/div/button
+            await driver.findElement(By.xpath(`//*[@id="${stock}"]/div[4]/div/div/main/div[1]/div/div[3]/div[4]/table[1]/thead/tr/th[6]/div/button`)).click();
             await new Promise(resolve => setTimeout(resolve, 500));
-            console.log("geçişbutonuna tıklanıyor")
+            console.log("geçişbutonuna tıklanıyor");
   
           }  
         }
       } 
     } catch (error) {
+      console.log(error)
       continue;
     }
   }
@@ -54,8 +55,8 @@ async function dbconnection() {
   });
 
   try {
-    await client.connect();
-5
+    await client.connect(); 
+
     const toplam_dönen_varlıklar            ="_toplam dönen varlıklar";
     const toplam_varlıklar                  ="_toplam varlıklar";
     const toplam_kısa_vadeli_yükümlülükler  = "_toplam kısa vadeli yükümlülükler";
@@ -73,9 +74,10 @@ async function dbconnection() {
     await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_varlıklar                  ,2,7,client);
     await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_kısa_vadeli_yükümlülükler  ,3,8,client); 
     await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_uzun_vadeli_yükümlülükler  ,4,5,client);
+    await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_özkaynaklar                ,5,10,client);
     await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_kaynaklar                  ,5,11,client);
-    */
-/*
+    
+
     var KoçHolding="KCHOL";
     await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'KCHOL'`);
 
@@ -84,7 +86,7 @@ async function dbconnection() {
     await PrepareToClient(KoçHolding,KoçHolding+toplam_kısa_vadeli_yükümlülükler,3,10,client);
     await PrepareToClient(KoçHolding,KoçHolding+toplam_uzun_vadeli_yükümlülükler,4,8,client);
     await PrepareToClient(KoçHolding,KoçHolding+toplam_özkaynaklar             ,5,12,client);
-    await PrepareToClient(KoçHolding,KoçHolding+toplam_kaynaklar             ,5,13,client);
+    await PrepareToClient(KoçHolding,KoçHolding+toplam_kaynaklar             ,5,13,client)
 */
 
     var OyakHolding="OYYAT";
@@ -97,6 +99,7 @@ async function dbconnection() {
     await PrepareToClient(OyakHolding,OyakHolding+toplam_özkaynaklar             ,5,11,client);
     await PrepareToClient(OyakHolding,OyakHolding+toplam_kaynaklar             ,5,12,client);
 
+    
   } catch (err) {
     console.error("Veri eklenirken hata oluştu:", err.message);
   } finally{

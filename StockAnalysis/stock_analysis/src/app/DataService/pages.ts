@@ -11,18 +11,18 @@ export type Data = {
     data: StockData[];
 };
 
-export type Error = {
+export type FetchError = {
     error: string;
 };
 
-export async function fetchData(stock_name: string, financial_statement: string): Promise<Data | Error> {
+export async function fetchData(stock_name: string, financial_statement: string): Promise<Data | FetchError> {
     try {
         const response = await fetch('https://berk420.github.io/StockPredictionApplication/stock_endpoint.json');
-        const responseData: StockData[] = await response.json();
+        const response_data: StockData[] = await response.json();
 
         if (response.ok) {
-            const filteredData = responseData.filter(row => row.hisse_adi === stock_name && row.bilanco_kalemi === financial_statement);
-            return { data: filteredData };
+            const filtered_data = response_data.filter(row => row.hisse_adi === stock_name && row.bilanco_kalemi === financial_statement);
+            return { data: filtered_data };
         } else {
             return { error: 'Failed to fetch data' };
         }
