@@ -8,6 +8,34 @@
     gap: 25px; /* Elemanlar arasına 20px boşluk ekler */
 }
 
+.allGraph {
+  display: flex; /* Flexbox düzenini kullan */
+  flex-direction: column; /* Elemanları yatay olarak sırala (yan yana) */
+  align-items: center; /* Elemanları dikeyde ortala */
+  justify-content: start; /* Elemanları yatayda başlangıca hizala */
+  width: auto; /* div'in genişliği sayfanın genişliği kadar olacak */
+  margin: 0; /* Varsayılan marjinleri kaldır */
+  padding: 0; /* Varsayılan padding'i kaldır */
+  border-radius: 8px; /* Kenarları yuvarlat */
+}
+
+.headerElement {
+
+  display: flex; /* Flexbox düzenini kullan */
+  flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
+  align-items: center; /* Elemanları dikeyde ortala */
+  justify-content: start; /* Elemanları yatayda başlangıca hizala */
+  width: 100%; /* div'in genişliği sayfanın genişliği kadar olacak */
+  margin: 0; /* Varsayılan marjinleri kaldır */
+  padding: 0; /* Varsayılan padding'i kaldır */
+  background-color: rgb(255, 255, 255); /* Arka plan rengi beyaz */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Hafif gri border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Şık gölge efekti */
+  border-radius: 8px; /* Kenarları yuvarlat */
+  margin-bottom: 10px;
+
+}
+
 .allElement {
     display: flex; /* Flexbox düzenini kullan */
     flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
@@ -23,9 +51,9 @@
 }
 
 .toolside {
+
     display: flex; /* Flexbox düzenini kullan */
     flex-direction: row; /* Elemanları yatay olarak sırala (yan yana) */
-   
     width: 200px; /* Genişliği 15% */
     height: 300px; /* Yüksekliği 50% */
     background-color: #EEEEEE; /* Arka plan rengi beyaz */

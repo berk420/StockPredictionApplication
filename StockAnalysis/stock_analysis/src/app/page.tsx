@@ -27,7 +27,7 @@ export default function Home() {
         }
 
         (await stock_name().then()).forEach(async stock_name => {
-            await createGeneralHtml(stock_name, await stock_long_name(stock_name));
+            await createGeneralHtml(stock_name, await stock_long_name(stock_name),);
             (await financial_statement().then()).forEach(async financial_statement => {
                 await financialStatementGraph(stock_name, financial_statement);
 
@@ -55,7 +55,10 @@ export default function Home() {
     }
 
     return (
+
         <div className={styles.pages}>
+
+
             <div className={styles.toolside} id='toolside'>
 
             <Table hideHeader aria-label="Example static collection table" className={styles.table}>
@@ -89,11 +92,14 @@ export default function Home() {
       </TableBody>
     </Table>
 
+            </div>
 
+            <div className={styles.allGraph}>
 
+            <div className={styles.headerElement} id ="headerelement"></div>
+            <div className={styles.allElement} id="allelement"></div>
 
             </div>
-            <div className={styles.allElement} id="allelement"></div>
         </div>
     );
 }
