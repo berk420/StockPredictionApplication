@@ -1650,138 +1650,6 @@
     "deger": "15"
   },
   {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2024/3",
-    "deger": "35"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2023/12",
-    "deger": "34"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2023/9",
-    "deger": "33"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2023/6",
-    "deger": "26"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2023/3",
-    "deger": "18"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2022/12",
-    "deger": "16"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2022/9",
-    "deger": "12"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2022/6",
-    "deger": "9"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2022/3",
-    "deger": "8"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2021/12",
-    "deger": "10"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2021/9",
-    "deger": "8"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2021/6",
-    "deger": "9"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2021/3",
-    "deger": "10"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2020/12",
-    "deger": "9"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2020/9",
-    "deger": "10"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2020/6",
-    "deger": "5"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2020/3",
-    "deger": "5"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2019/12",
-    "deger": "3"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2019/9",
-    "deger": "2"
-  },
-  {
-    "hisse_adi": "DGGYO",
-    "bilanco_kalemi": "DGGYO_price",
-    "zaman": "2019/6",
-    "deger": "2"
-  },
-  {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2024/3",
-    "deger": "47"
-  },
-  {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2023/12",
-    "deger": "43"
-  },
-  {
     "hisse_adi": "OYYAT",
     "bilanco_kalemi": "OYYAT_toplam dönen varlıklar",
     "zaman": "2023/12",
@@ -1872,6 +1740,108 @@
     "deger": "1.288.653"
   },
   {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2024/3",
+    "deger": "35"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2023/12",
+    "deger": "34"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2023/9",
+    "deger": "33"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2023/6",
+    "deger": "26"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2023/3",
+    "deger": "18"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2022/12",
+    "deger": "16"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2022/9",
+    "deger": "12"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2022/6",
+    "deger": "9"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2022/3",
+    "deger": "8"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2021/12",
+    "deger": "10"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2021/9",
+    "deger": "8"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2021/6",
+    "deger": "9"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2021/3",
+    "deger": "10"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2020/12",
+    "deger": "9"
+  },
+  {
+    "hisse_adi": "DGGYO",
+    "bilanco_kalemi": "DGGYO_price",
+    "zaman": "2020/9",
+    "deger": "10"
+  },
+  {
+    "hisse_adi": "OYYAT",
+    "bilanco_kalemi": "OYYAT_price",
+    "zaman": "2024/3",
+    "deger": "47"
+  },
+  {
+    "hisse_adi": "OYYAT",
+    "bilanco_kalemi": "OYYAT_price",
+    "zaman": "2023/12",
+    "deger": "43"
+  },
+  {
     "hisse_adi": "OYYAT",
     "bilanco_kalemi": "OYYAT_price",
     "zaman": "2023/9",
@@ -1950,33 +1920,93 @@
     "deger": null
   },
   {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2020/6",
-    "deger": null
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2024/3",
+    "deger": "159"
   },
   {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2020/3",
-    "deger": null
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2023/12",
+    "deger": "136"
   },
   {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2019/12",
-    "deger": null
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2023/9",
+    "deger": "138"
   },
   {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2019/9",
-    "deger": null
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2023/6",
+    "deger": "77"
   },
   {
-    "hisse_adi": "OYYAT",
-    "bilanco_kalemi": "OYYAT_price",
-    "zaman": "2019/6",
-    "deger": null
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2023/3",
+    "deger": "75"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2022/12",
+    "deger": "67"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2022/9",
+    "deger": "41"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2022/6",
+    "deger": "38"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2022/3",
+    "deger": "29"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2021/12",
+    "deger": "26"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2021/9",
+    "deger": "21"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2021/6",
+    "deger": "17"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2021/3",
+    "deger": "20"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2020/12",
+    "deger": "16"
+  },
+  {
+    "hisse_adi": "KCHOL",
+    "bilanco_kalemi": "KCHOL_price",
+    "zaman": "2020/9",
+    "deger": "13"
   }
 ]
