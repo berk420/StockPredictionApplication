@@ -22,6 +22,11 @@ export default function Home() {
         sayac = false;
 
         const allelementDiv = await document.getElementById("allelement");
+        const headerelement = await document.getElementById("headerelement");
+
+        if(headerelement){
+            headerelement.innerHTML='';
+        }
         if (allelementDiv) {
             allelementDiv.innerHTML = '';
         }
