@@ -4,7 +4,8 @@ export enum Financial_Statement_Db_Name {
     TOPLAM_KISA_VADELI_YUKUMLULUKLER = "_toplam kısa vadeli yükümlülükler",
     TOPLAM_UZUN_VADELI_YUKUMLULUKLER = "_toplam uzun vadeli yükümlülükler",
     TOPLAM_OZKAYNAKLAR = "_toplam özkaynaklar",
-    TOPLAM_KAYNAKLAR = "_toplam kaynaklar"
+    TOPLAM_KAYNAKLAR = "_toplam kaynaklar",
+    STOCK_VALUE="_price"
 }
 
 export enum Financial_Statement_Name {
@@ -13,11 +14,14 @@ export enum Financial_Statement_Name {
     TOPLAM_KISA_VADELI_YUKUMLULUKLER = "toplam kısa vadeli yükümlülükler",
     TOPLAM_UZUN_VADELI_YUKUMLULUKLER = "toplam uzun vadeli yükümlülükler",
     TOPLAM_OZKAYNAKLAR = "toplam özkaynaklar",
-    TOPLAM_KAYNAKLAR = "toplam kaynaklar"
+    TOPLAM_KAYNAKLAR = "toplam kaynaklar",
+    STOCK_VALUE="hisse değeri",
+
 }
 
 export async function financial_statement(): Promise<string[]> {
     const financial_statement = [
+        Financial_Statement_Db_Name.STOCK_VALUE,
         Financial_Statement_Db_Name.TOPLAM_DONEN_VARLIKLAR,
         Financial_Statement_Db_Name.TOPLAM_VARLIKLAR,
         Financial_Statement_Db_Name.TOPLAM_KISA_VADELI_YUKUMLULUKLER,
@@ -30,6 +34,8 @@ export async function financial_statement(): Promise<string[]> {
 
 export async function financial_statement_Name(statement: string): Promise<string> {
     switch (statement) {
+        case Financial_Statement_Db_Name.STOCK_VALUE:
+            return Financial_Statement_Name.STOCK_VALUE;
         case Financial_Statement_Db_Name.TOPLAM_DONEN_VARLIKLAR:
             return Financial_Statement_Name.TOPLAM_DONEN_VARLIKLAR;
         case Financial_Statement_Db_Name.TOPLAM_VARLIKLAR:
@@ -42,6 +48,7 @@ export async function financial_statement_Name(statement: string): Promise<strin
             return Financial_Statement_Name.TOPLAM_OZKAYNAKLAR;
         case Financial_Statement_Db_Name.TOPLAM_KAYNAKLAR:
             return Financial_Statement_Name.TOPLAM_KAYNAKLAR;
+
         default:
             return "error";
     }

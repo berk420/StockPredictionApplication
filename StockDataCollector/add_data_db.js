@@ -68,7 +68,7 @@ async function dbconnection() {
     //await client.query(sql_drop);
 /*
     var DoğuşHolding="DGGYO";
-    await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'DGGYO'`);
+    await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'DGGYO' AND bilanco_kalemi = ''`);
 
     await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_dönen_varlıklar            ,1,8,client);
     await PrepareToClient(DoğuşHolding,DoğuşHolding+toplam_varlıklar                  ,2,7,client);
@@ -79,7 +79,7 @@ async function dbconnection() {
     
 
     var KoçHolding="KCHOL";
-    await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'KCHOL'`);
+    await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'DGGYO' AND bilanco_kalemi = ''`);
 
     await PrepareToClient(KoçHolding,KoçHolding+toplam_dönen_varlıklar         ,1,11,client);
     await PrepareToClient(KoçHolding,KoçHolding+toplam_varlıklar                   ,2,12,client);
@@ -90,7 +90,7 @@ async function dbconnection() {
 */
 
     var OyakHolding="OYYAT";
-    await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'OYYAT'`);
+    await client.query(`DELETE FROM bilanco WHERE hisse_adi = 'DGGYO' AND bilanco_kalemi = ''`);
 
     await PrepareToClient(OyakHolding,OyakHolding+toplam_dönen_varlıklar         ,1,11,client);
     await PrepareToClient(OyakHolding,OyakHolding+toplam_varlıklar                   ,2,14,client);

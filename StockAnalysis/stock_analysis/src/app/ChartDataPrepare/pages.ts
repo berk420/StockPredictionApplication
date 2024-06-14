@@ -20,6 +20,11 @@ export async function CollectStockValueData(response: Data | FetchError, stock_n
     return response.data
     .filter((item :any) => item.hisse_adi === stock_name && item.bilanco_kalemi === stock_name + financial_statement)
     .map((item :any) => {
+        //console.log(item.bilanco_kalemi.toString());
+        //console.log(item.deger.toString());
+        if (item.deger === null || item.deger === undefined) {
+            return NaN; // veya başka uygun bir değer
+        }
         return parseFloat(item.deger.toString().replace(/\./g, '').replace(',', '.'));
     });
 }
