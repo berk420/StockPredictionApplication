@@ -18,9 +18,10 @@
 - Iron and steel industry etc. will be added
 - Query folder will be add for API
 - More feature on the way...
+- Fix the css names according to best practice
 
 ## 2.4.0 (Upcoming)
-- Current stock price information will be add and data will take via alphavantage.co API
+- Current stock price information will be add and data will take via yfinance python library
 
 ## 2.3.0 
 - Able to see the balance sheet values in gold basis

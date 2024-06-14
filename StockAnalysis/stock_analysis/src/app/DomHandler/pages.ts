@@ -15,7 +15,9 @@ export async function drawLineChart(data: Data | FetchError, stock_name: string,
         await CollectTimeData(data, stock_name, financial_statement),
         await CollectStockValueData(data, stock_name, financial_statement),
         selectedCurrency
-    ); // Örnek xList
+    );
+    
+    console.log(chart_data);
 
     const ctx = document.getElementById(stock_name+financial_statement) as HTMLCanvasElement;
 
@@ -56,12 +58,13 @@ export async function drawLineChart(data: Data | FetchError, stock_name: string,
 
     
 }
-export async function createGeneralHtml(stock_name: string, financial_statement:string): Promise<void> {
+export async function createGeneralHtml(stock_name: string, stock_long_name:string): Promise<void> {
     return new Promise<void>((resolve) => {
         setTimeout(() => {
             const allContainer = document.getElementById("allelement");
+            const headerelement = document.getElementById("headerelement");
 
-            if (!allContainer) {
+            if (!allContainer || !headerelement) {
                 console.error("Container element not found.");
                 resolve();
                 return;
@@ -69,11 +72,9 @@ export async function createGeneralHtml(stock_name: string, financial_statement:
 
             const heading = document.createElement("h4");
 
-            // Set the text content of the heading
-            heading.textContent = financial_statement;
+            heading.textContent = stock_long_name;
             heading.style.width = "300px";
             heading.style.height = "50px";
-            
             heading.style.margin = "0 auto"; // Center horizontally
             heading.style.marginBottom = "-20px"; // Add margin at the bottom
             heading.style.marginTop = "20px"; // Add margin at the top
@@ -83,27 +84,35 @@ export async function createGeneralHtml(stock_name: string, financial_statement:
             heading.style.textAlign = "center";
             heading.style.color = "Grey"; // Change font color to blue (or any other color you want)
 
-
             const hissediv = document.createElement("div");
-            hissediv.id = stock_name;
 
+            hissediv.id = stock_name;
             hissediv.style.display = "center";
             hissediv.style.flexDirection = "row";
             hissediv.style.alignItems = "center";
             hissediv.style.justifyContent = "center";
-
             hissediv.style.width = "100%";
             hissediv.style.height = "100%";
-
-            hissediv.style.left = "300px";
-
-
             hissediv.style.margin = "10";
             hissediv.style.padding = "10";
 
+            const hissedivv = document.createElement("div");
+
+            hissedivv.id = stock_name+"price";
+            hissedivv.style.display = "center";
+            hissedivv.style.flexDirection = "row";
+            hissedivv.style.alignItems = "center";
+            hissedivv.style.justifyContent = "center";
+            hissedivv.style.width = "100%";
+            hissedivv.style.height = "100%";
+            hissedivv.style.margin = "10";
+            hissedivv.style.padding = "10";
+
+            headerelement.appendChild(hissedivv);
+
+            hissedivv.appendChild(heading);
 
             allContainer.appendChild(hissediv);
-            hissediv.appendChild(heading);
 
             resolve();
         }, 500);
@@ -115,9 +124,11 @@ export async function createGeneralHtml(stock_name: string, financial_statement:
     return new Promise<void>((resolve) => {
         setTimeout(() => {
             const hisseelement = document.getElementById(stock_name);
+            const headerelement = document.getElementById(stock_name+"price");
 
-            if (!hisseelement) {
-                console.error("Hisse element not found.");
+
+            if (!hisseelement || !headerelement) {
+                console.error("Container element not found.");
                 resolve();
                 return;
             }
@@ -125,10 +136,19 @@ export async function createGeneralHtml(stock_name: string, financial_statement:
             const stocknamediv = document.createElement("canvas");
 
             stocknamediv.id = stock_name +financial_statement ;
-            stocknamediv.style.width = "100%";
-            stocknamediv.style.height = "200px";
+            stocknamediv.style.width = "150px";
+            stocknamediv.style.height = "100px";
 
-            hisseelement.appendChild(stocknamediv);
+
+            console.log(financial_statement);
+
+            if(financial_statement=="_price"){
+                headerelement.appendChild(stocknamediv);
+
+            }else{
+                hisseelement.appendChild(stocknamediv);
+
+            }
 
             resolve();
         }, 1000);
