@@ -3,6 +3,9 @@
 
 # Release Note
 
+## Kruchten's 4+1 model view
+- https://www.figma.com/board/UQGKP3BTS4itwd5rhNmBPm/Untitled?node-id=0-1&t=7yLDtRKVFqOBIc2h-1
+
 ## features will be added
 - Show data by years
 - Loading icon animation (during componenet loading )
