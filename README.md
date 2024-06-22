@@ -54,6 +54,7 @@
 - StockAnalysis are Declarative, Imperative and Asynchronous  programing
 
 # Some information about whole project
+- Architecture are Three-Tier Architecture
 - The development model is Git Flow
 - Database managment system: PostgreSQL
 - Web server: Github pages (it's will be azure soon)
