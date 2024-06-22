@@ -1,6 +1,6 @@
 ## Web site url 
 - https://main--stockanalysisandprediction.netlify.app/
-- 
+
 ## StockAnalysis
 - Language: TypeScript
 - Architecture : Componenet-based architecture (React-Next.js)
@@ -22,6 +22,7 @@
 
 # Some information about whole project
 - Architecture are Three-Tier Architecture
+- Presentation Layer: StockAnalysis, Application Layer: StockAPI , Data Layer : StockDataCollector
 - The development model is Git Flow
 - Database managment system: PostgreSQL
 
