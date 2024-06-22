@@ -1,5 +1,29 @@
 ## Web site url 
 - https://main--stockanalysisandprediction.netlify.app/
+- 
+## StockAnalysis
+- Language: TypeScript
+- Architecture : Componenet-based architecture (React-Next.js)
+- Programig paradigms: Declarative, Imperative and Asynchronous  programing
+- Commonly used architecture in React/Next.js Modular Architecture,so i used.
+
+## StockAPI
+- Programing paradigms: OOP
+- Web server: Github pages (it's will be azure soon)
+- Architecture: Service-oriented architecture (ASP.NET Web API)
+- Used Attribute Routing for URLs map to controller actions
+- Communication between Database and API Raw SQL
+
+## CI/CD proccess
+- It is deploying via main branch
+- Host service are Netlify
+- Instead deploying api I just using github pages for single endpoint
+- The Endpoint that I deployed on TestEndpoint branch
+
+# Some information about whole project
+- Architecture are Three-Tier Architecture
+- The development model is Git Flow
+- Database managment system: PostgreSQL
 
 # Release Note
 
@@ -48,29 +72,6 @@
 - Drawer and layout will be fix
 - File stracture will be more readable
 - Finallly, web site will be publish
-
-## Programing paradigms
-- StockAPI are OOP
-- StockAnalysis are Declarative, Imperative and Asynchronous  programing
-
-# Some information about whole project
-- Architecture are Three-Tier Architecture
-- The development model is Git Flow
-- Database managment system: PostgreSQL
-- Web server: Github pages (it's will be azure soon)
-- Communication between Database and API Raw SQL
-
-## Some information about StockAnalysis
-- commonly used architecture in React/Next.js Modular Architecture,so i used.
-
-## Some information about StockAPI
-- I used Attribute Routing for URLs map to controller actions
-
-## CI/CD proccess
-- It is deploying via main branch
-- Host service are Netlify
-- Instead deploying api I just using github pages for single endpoint
-- The Endpoint that I deployed on TestEndpoint branch
-
+- 
 
 
