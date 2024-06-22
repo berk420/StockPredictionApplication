@@ -23,7 +23,7 @@
 # Some information about whole project
 - Architecture are Three-Tier Architecture
 - Presentation Layer: StockAnalysis
-- Application Layer: StockAPI
+- Application Layer (Business Logic Layer): StockAPI
 - Data Layer : PostgreSQL (you can fill db with StockDataCollector)
 - The development model is Git Flow
 - Database managment system: PostgreSQL
