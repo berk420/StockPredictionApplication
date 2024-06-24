@@ -50,7 +50,11 @@
 - More feature on the way...
 - Fix the css names according to best practice
 
-## 2.4.0 (Upcoming)
+
+## 2.5.0 (Upcoming)
+-Financial statement data can be compared in a 3D chart (with Thre.js library) 
+
+## 2.4.0
 - Current stock price information will be add and data will take via yfinance python library
 
 ## 2.3.0 
