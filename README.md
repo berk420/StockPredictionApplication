@@ -1,4 +1,4 @@
-## Web site url 
+ ## Web site url 
 - https://main--stockanalysisandprediction.netlify.app/
 
 ## StockAnalysis
@@ -26,7 +26,17 @@
 - Application Layer (Business Logic Layer): StockAPI
 - Data Layer : PostgreSQL (you can fill db with StockDataCollector)
 - The development model is Git Flow
-- Database managment system: PostgreSQL
+- Database managment system: PostgreSQ
+
+
+## Case logic
+- Objects and variables: Snake case (user_name)
+- Class, enum, file, folder: Pascall case (UserName)
+- Strings: Upper snake case (USER_NAME)
+- Function, method: Camel case (userName)
+- HTML attributes: Lower case (username)
+
+
 
 # Release Note
 
